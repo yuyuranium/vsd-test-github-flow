@@ -10,13 +10,11 @@ See the reference [here](https://docs.github.com/en/get-started/quickstart/githu
 
 ## Key points
 
-:::info
 1. Files in the master (or main) branch are what we have consensus about and will finally be what we are going to submit as final project delivery.
 2. Never edit the master branch directly.
 3. Create a branch, make some changes on it and need not worry about file pollution.
 4. After finishing editing, create a **Pull Request** to ask other collaberators review your code.
 5. Until the reviewer approve your code, then it can be merged into master.
-:::
 
 ## Following the GitHub flow
 
@@ -82,9 +80,7 @@ Practice [here](https://github.com/yuyuranium/vsd-test-github-flow)
    git commit -m "Commit message"
    ```
    
-   :::info
    Please write meaningful commit messages. :+1:
-   :::
 
 3. **Push changes to GitHub**
 
