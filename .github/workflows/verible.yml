@@ -1,0 +1,17 @@
+name: Verible linter
+on:
+  pull_request:
+jobs:
+  lint:
+    runs-on: ubuntu-20.04
+    steps:
+    - uses: actions/checkout@main
+    - uses: chipsalliance/verible-linter-action@main
+      with:
+        config_file: './.verible.rules'
+        suggest_fixes: 'false'
+        fail_on_error: 'true'
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        extra_args: "--waiver_files=.verible.waiver"
+        paths: |
+          ./src
